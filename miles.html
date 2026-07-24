@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-    <title>Mile to Kilometer Converter</title>
-    <link rel="stylesheet" href="style1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Mile to Kilometer Converter</h1>
+    <h1>Distance Converter</h1>
 
-    <input type="number" id="miles" placeholder="Enter miles">
+    <input type="number" id="value" placeholder="Enter value">
+
+    <br><br>
+
+    <select id="conversion">
+        <option value="mtok">Miles to Kilometers</option>
+        <option value="ktom">Kilometers to Miles</option>
+    </select>
+
+    <br><br>
 
     <button onclick="convert()">Convert</button>
 
     <p id="result"></p>
 
-    <script src="converter.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
