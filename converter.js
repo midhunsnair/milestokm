@@ -1,8 +1,17 @@
 function convert() {
-    let miles = document.getElementById("miles").value;
 
-    let kilometers = miles * 1.60934;
+    let value = document.getElementById("value").value;
+    let conversion = document.getElementById("conversion").value;
+    let result;
 
-    document.getElementById("result").innerHTML =
-        miles + " miles = " + kilometers.toFixed(2) + " km";
+    if (conversion === "mtok") {
+        result = value * 1.60934;
+        document.getElementById("result").innerHTML =
+            value + " miles = " + result.toFixed(2) + " kilometers";
+    } else {
+        result = value / 1.60934;
+        document.getElementById("result").innerHTML =
+            value + " kilometers = " + result.toFixed(2) + " miles";
+    }
+
 }
